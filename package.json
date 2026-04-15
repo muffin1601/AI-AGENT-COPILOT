@@ -1,0 +1,48 @@
+{
+  "name": "ai-agent-copilot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^3.0.60",
+    "@ai-sdk/groq": "^3.0.35",
+    "@ai-sdk/react": "^3.0.155",
+    "@auth/prisma-adapter": "^2.11.1",
+    "@google/generative-ai": "^0.24.1",
+    "@prisma/adapter-pg": "^7.6.0",
+    "@prisma/client": "^7.6.0",
+    "@supabase/ssr": "^0.10.0",
+    "@supabase/supabase-js": "^2.101.1",
+    "@types/fs-extra": "^11.0.4",
+    "ai": "^6.0.153",
+    "framer-motion": "^12.38.0",
+    "fs-extra": "^11.3.4",
+    "lucide-react": "^1.7.0",
+    "mammoth": "^1.12.0",
+    "next": "16.2.2",
+    "nodemailer": "^7.0.13",
+    "openai": "^6.33.0",
+    "pdf-parse": "^2.4.5",
+    "pg": "^8.20.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/pg": "^8.20.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.2",
+    "prisma": "^7.6.0",
+    "typescript": "^5"
+  }
+}

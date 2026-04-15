@@ -1,0 +1,137 @@
+.container {
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.welcomeBadge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 30px;
+  width: fit-content;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: var(--muted);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.statCard {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: var(--transition-smooth);
+}
+
+.statCard:hover {
+  transform: translateY(-8px);
+  border-color: var(--border-active);
+}
+
+.statLabel {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.statValue {
+  font-size: 56px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.statTrend {
+  font-size: 13px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 16px;
+  border-radius: 30px;
+  width: fit-content;
+}
+
+.activityCard {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 40px;
+  padding: 60px;
+}
+
+.activityTitle {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.activityItem {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.activityDot {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.efficiencyCircle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+  border: 4px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.efficiencySpin {
+  position: absolute;
+  inset: -6px;
+  border-top: 6px solid #fff;
+  border-radius: 50%;
+  animation: spin 3s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+.efficiencyValue {
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+}

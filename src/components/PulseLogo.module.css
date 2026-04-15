@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+.container:active {
+  transform: scale(0.95);
+}
+
+.iconBox {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  background: var(--foreground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.innerDot {
+  width: 6px;
+  height: 6px;
+  background: var(--background);
+  position: relative;
+  z-index: 10;
+}
+
+.pulseRing {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.text {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  color: var(--foreground);
+  text-transform: lowercase;
+}
